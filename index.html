@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="./img/imgxd.png" type="png">
+    <title>Encriptador Challenge</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <img class="logoalu" src="./img/Logo.png" alt="Alura">
+        <h1 class="titulo">ENCRIPTADOR</h1>
+    </header>
+    <!-- main -->
+    <main>
+        <section>
+            <textarea class="ingrese" placeholder="Ingrese el texto aquí" cols="30" rows="9" autofocus></textarea>
+
+            <div>
+                <h6 class="munisculas"><img src="./img/icon.svg"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+            
+            <!--  -->
+            <div class="buttons" >
+                <button class="encriptar" id="encriptar" onclick="" >Encriptar</button>
+                <button class="desencriptar" id="desencriptar" onclick="" >Desencriptar</button>
+            </div>
+        </section>
+        <!-- SECTION TWO -->
+        <section>
+            <textarea class="mensaje-texto" cols="20" rows="8" disabled></textarea>
+
+            <div class="imagen" id="ocultarImagen">  
+                <img class="img_mensaje" src="./img/encrip.png" alt="">
+            </div>
+
+            <div class="mensaje" >
+                <h2 class="mensajeone">Ningún mensaje fue encontrado</h2>
+                <h3 class="mensajetwo" >Ingresa el texto que desees encriptar o desencriptar</h3>
+                <button class="copiar" id="copiar" onclick="" style="display: none;" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footerxd">
+        <p>© Desarrollado por Ivan Pacheco</p>
+    </footer>
+    <!-- script -->
+</body>
+    <script src="app.js" ></script>
+</html>
