@@ -86,3 +86,38 @@ btnCopiar.addEventListener('click', function(){
     document.querySelector(".mensaje-texto").value = "";
 });
 
+/* ------------------------DESENCIPTAR------------------------------- */
+
+/* btnDesencriptar.addEventListener('click', function(){
+    let textoIngresado = document.querySelector('.ingrese').value;
+    let decrypted = desencriptar(textoIngresado);
+
+    let resultado = document.querySelector(".mensaje-texto");
+    resultado.value = decrypted;
+}); */
+
+function desencriptar(textoIngresado){
+    let encrypted = ""; 
+    for(const obj in reglamento){
+        encrypted = textoIngresado.replaceAll(reglamento[obj], obj);
+        textoIngresado = encrypted;
+        ocultarTxtImg();
+        ingrese.value = "";
+    }
+    return encrypted;
+}
+/* -----------------OCULTAR Y MOSTRAR-------------------------------------- */
+
+function ocultarTxtImg(){
+    mensajeone.style.display = "none"; // cunado le doy click al boton se ocultan el mnsj y la  imagen
+    mensajetwo.style.display = "none";
+    btnCopiar.style.display = ""; //muestra
+    ocultarImagen.style.display = "none";
+}
+
+function mostrarTxtImg(){
+    mensajeone.style.display = "";
+    mensajetwo.style.display = "";
+    btnCopiar.style.display = "none";//oculta
+    ocultarImagen.style.display = "";
+}
