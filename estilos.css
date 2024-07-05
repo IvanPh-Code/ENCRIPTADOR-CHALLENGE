@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'Krona One';
+    src: url('./font/KronaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('./font/Inter-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------header-------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    margin-left: 80px;
+}
+
+.logoalu {
+    margin-top: 25px;
+    width: 8%;
+    margin-right: 5px;
+}
+
+.titulo {
+    font-family: 'Krona One', sans-serif;
+    margin-top: 43px;
+    font-size: 2rem;
+    color: #0A3871;
+}
+
+/* ----------------------------main------------------------------- */
+main {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.ingrese {
+    resize: none;
+    margin-top: 90px;
+    color: #0A3871;
+    border: none;
+    font-size: 1.05rem;
+    font-family: "Inter";
+}
+
+.ingrese::placeholder {
+    color: #0A3871;
+}
+
+.ingrese:focus {
+    outline: none;
+}
+
+.munisculas {
+    color: rgb(152, 151, 151);
+    font-size: 12px;
+    font-family: "Inter";
+    display: flex;
+    gap: 2%;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 18px;
+}
+
+.encriptar {
+    color: #D8DFE8;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 57px; /* altura */
+    width: 228px; /* ancho */
+    font-family: "Inter";
+}
+
+.desencriptar {
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 57px;
+    margin-left: 30px;
+    width: 228px;
+    font-family: "Inter";
+}
+
+/* ----------------------------SECTION TWO------------------------------------ */
+.imagen {
+    width: 200px;
+    height: 230px;
+    text-align: center;
+    position: relative;
+    top: -388px; /* Ajusta este valor negativo para mover el div hacia arriba */
+    left: 240px;
+}
+
+.img_mensaje {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.mensaje-texto {
+    resize: none;
+    margin-left: 98px;
+    padding: 143px;
+    padding-bottom: 120px;
+    color: #0A3871;
+    background: #D8DFE8;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(13, 12, 12, 0.252);
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mensaje-texto:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: transparent;
+    margin-left: 150px;
+    margin-top: -420px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+.mensajeone {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+    font-family: "Inter";
+}
+
+.mensajetwo {
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+    font-family: "Inter";
+}
+
+.copiar {
+    color: #0A3871;
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    margin-top: 332px;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover {
+    background: rgb(90, 87, 87);
+    color: #d8dfe8;
+}
+
+/* ----------------------footer-------------------------- */
+.footerxd {
+    background-color: #0A3871;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 0.7rem;
+    position: absolute;
+    width: 100%;
+    top: 685px;
+    height: 50px;
+}
+
+/* -------------------responsivo------------------------------ */
+@media (max-width: 1200px) {
+    /* Estilos para laptops */
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .ingrese {
+        font-size: 1rem;
+    }
+    .encriptar, .desencriptar {
+        height: 50px;
+        width: 200px;
+    }
+    .mensaje-texto {
+        padding: 100px;
+        margin-left: 90px;
+    }
+    .mensaje {
+        margin-left: 100px;
+    }
+    .imagen {
+        top: -300px;
+        left: 100px;
+    }
+    .img_mensaje {
+        width: 54%;
+        height: auto;
+        display: block;
+        margin: auto;
+}
+    .mensajeone {
+        font-size: 22px;
+    }
+    .mensajetwo {
+        font-size: 14px;
+    }
+    .footerxd {
+        font-size: 0.6rem;
+        top: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para tablets */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+    .titulo {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    .logoalu {
+        width: 10%;
+    }
+    main {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .ingrese {
+        margin-top: 50px;
+        font-size: 0.9rem;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .encriptar, .desencriptar {
+        height: 45px;
+        width: 180px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .mensaje-texto {
+        padding: 80px;
+        margin-left: 70px;
+    }
+    .mensaje {
+        margin-left: 0;
+        margin-top: -300px;
+        width: 100%;
+    }
+    .imagen {
+        display: none; /* Ocultar imagen en tablets */
+    }
+    .mensajeone {
+        font-size: 20px;
+    }
+    .mensajetwo {
+        font-size: 12px;
+    }
+    .footerxd {
+        font-size: 0.6rem;
+        top: 900px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para celulares */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+    .titulo {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .logoalu {
+        width: 12%;
+    }
+    main {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .ingrese {
+        margin-top: 30px;
+        font-size: 0.8rem;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .encriptar, .desencriptar {
+        height: 40px;
+        width: 150px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .mensaje-texto {
+        padding: 60px;
+        margin-left: 0;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .mensaje {
+        margin-left: 0;
+        margin-top: -250px;
+        width: 100%;
+    }
+    .imagen {
+        display: none; /* Ocultar imagen en celulares */
+    }
+    .mensajeone {
+        font-size: 18px;
+    }
+    .mensajetwo {
+        font-size: 10px;
+    }
+    .copiar {
+        margin-top: 250px;
+        width: 150px;
+        height: 35px;
+    }
+    .footerxd {
+        font-size: 0.6rem;
+        top: 1200px;
+    }
+}
